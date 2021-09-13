@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-09-13T05:07:42.189Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36" etag="Wcxlb5ePPy5T5QhUbxY5" version="15.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-13T10:04:36.861Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36" etag="RpOifLz_JtFgcELLUZMp" version="15.1.4" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1426" dy="801" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="946" dy="621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -70,7 +70,7 @@
         <mxCell id="95srwG0zsuO4FYz2OOs8-22" value="计算兑换后的积分&lt;br&gt;调用产品接口添加等级积分" style="whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="990" y="540" width="170" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="95srwG0zsuO4FYz2OOs8-24" value="记录学分积分兑换明细表&lt;br&gt;更新兑换前兑换后学分&lt;br&gt;redis解锁，表示处理结束" style="whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="95srwG0zsuO4FYz2OOs8-24" value="记录学分积分兑换明细表&lt;br&gt;更新兑换前兑换后学分&lt;br&gt;删除redis中该，表示处理结束" style="whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="985" y="650" width="180" height="70" as="geometry" />
         </mxCell>
         <mxCell id="95srwG0zsuO4FYz2OOs8-42" value="&lt;div&gt;1、custom_yuexiu_dept_score_point_rate 部门学分积分兑换比例表&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2、custom_yuexiu_user_score_exc 学员学分兑换表&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3、custom_yuexiu_user_score_exc_detail 学员学分兑换明细表&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;4、查询一级部门下的所有用户ID表关联：core_department 、&amp;nbsp;core_userprofile&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;5、学员当前学分记录表：&lt;span&gt;core_userstudystatistic&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;6、配置越秀orgid&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 11px&quot;&gt;&lt;span&gt;7、调用产品添加等级积分接口已有：&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; font-size: 11px&quot;&gt;&lt;span style=&quot;font-family: &amp;#34;menlo&amp;#34; ; font-size: 11px&quot;&gt;QidaPointApiService.&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;menlo&amp;#34; ; font-size: 11px&quot;&gt;addPoint&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 11px&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; font-size: 11px&quot;&gt;&lt;span style=&quot;font-family: &amp;#34;menlo&amp;#34; ; font-size: 11px&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 11px&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; font-size: 11px&quot;&gt;&lt;span style=&quot;font-family: &amp;#34;menlo&amp;#34; ; font-size: 11px&quot;&gt;8、redis锁：UserCarPointsController.exportUserCarPoints&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;align=left;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
@@ -131,20 +131,20 @@
         <mxCell id="95srwG0zsuO4FYz2OOs8-68" value="计算当前可兑换学分" style="whiteSpace=wrap;html=1;rounded=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="1000" y="240" width="150" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="95srwG0zsuO4FYz2OOs8-71" value="当前可兑换学分 = 当前学分 - 上次兑换时记录的总学分 + 上次兑换后剩余学分" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="970" y="210" width="450" height="30" as="geometry" />
+        <mxCell id="95srwG0zsuO4FYz2OOs8-71" value="当前可兑换学分 = 当前学分 - 兑换学分(消耗总学分)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="1000" y="210" width="320" height="30" as="geometry" />
         </mxCell>
         <mxCell id="95srwG0zsuO4FYz2OOs8-114" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="95srwG0zsuO4FYz2OOs8-75" target="95srwG0zsuO4FYz2OOs8-68" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="95srwG0zsuO4FYz2OOs8-75" value="redis加锁" style="whiteSpace=wrap;html=1;rounded=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="95srwG0zsuO4FYz2OOs8-75" value="redis记录学员ID，表示处理中" style="whiteSpace=wrap;html=1;rounded=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="790" y="240" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="95srwG0zsuO4FYz2OOs8-79" value="&lt;span&gt;解锁&lt;/span&gt;" style="whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="95srwG0zsuO4FYz2OOs8-79" value="&lt;span&gt;删除redis中该key，表示处理结束&lt;/span&gt;" style="whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="790" y="400" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="95srwG0zsuO4FYz2OOs8-83" value="当前可兑换学分 = 当前学分 - 上次兑换时记录的总学分 + 上次兑换后剩余学分" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="725" y="980" width="450" height="30" as="geometry" />
+        <mxCell id="95srwG0zsuO4FYz2OOs8-83" value="当前可兑换学分 = 当前学分 - 兑换学分(消耗总学分)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="725" y="980" width="325" height="30" as="geometry" />
         </mxCell>
         <mxCell id="95srwG0zsuO4FYz2OOs8-113" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="95srwG0zsuO4FYz2OOs8-90" target="95srwG0zsuO4FYz2OOs8-109" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -172,7 +172,7 @@
         <mxCell id="95srwG0zsuO4FYz2OOs8-99" value="调用产品接口添加等级积分" style="whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="435" y="1670" width="170" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="95srwG0zsuO4FYz2OOs8-100" value="记录学分积分兑换明细表&lt;br&gt;更新兑换前兑换后学分&lt;br&gt;解锁，表示处理结束" style="whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="95srwG0zsuO4FYz2OOs8-100" value="记录学分积分兑换明细表&lt;br&gt;更新兑换前兑换后学分&lt;br&gt;删除redis中该，表示处理结束" style="whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="430" y="1780" width="180" height="70" as="geometry" />
         </mxCell>
         <mxCell id="95srwG0zsuO4FYz2OOs8-105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="95srwG0zsuO4FYz2OOs8-106" target="95srwG0zsuO4FYz2OOs8-97" edge="1">
@@ -181,16 +181,16 @@
         <mxCell id="95srwG0zsuO4FYz2OOs8-106" value="计算当前可兑换学分" style="whiteSpace=wrap;html=1;rounded=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="445" y="1370" width="150" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="95srwG0zsuO4FYz2OOs8-107" value="当前可兑换学分 = 当前学分 - 上次兑换时记录的总学分 + 上次兑换后剩余学分" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="415" y="1340" width="450" height="30" as="geometry" />
+        <mxCell id="95srwG0zsuO4FYz2OOs8-107" value="当前可兑换学分 = 当前学分 - 兑换学分(消耗总学分)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="450" y="1340" width="320" height="30" as="geometry" />
         </mxCell>
         <mxCell id="95srwG0zsuO4FYz2OOs8-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="95srwG0zsuO4FYz2OOs8-109" target="95srwG0zsuO4FYz2OOs8-106" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="95srwG0zsuO4FYz2OOs8-109" value="redis加锁" style="whiteSpace=wrap;html=1;rounded=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="95srwG0zsuO4FYz2OOs8-109" value="更新学员兑换状态为：1-兑换中" style="whiteSpace=wrap;html=1;rounded=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="160" y="1370" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="95srwG0zsuO4FYz2OOs8-110" value="解锁" style="whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="95srwG0zsuO4FYz2OOs8-110" value="redis记录学员ID，表示处理中" style="whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="270" y="1530" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
