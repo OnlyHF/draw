@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-09-13T13:16:51.352Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36" etag="m_Zj1Se0kTKebSqMRwBF" version="15.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-13T13:19:34.277Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36" etag="JujAc--naOli2qvXBZak" version="15.1.4" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="946" dy="621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1426" dy="801" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -152,37 +152,39 @@
         <mxCell id="95srwG0zsuO4FYz2OOs8-90" value="确认兑换接口" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;align=center;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="160" y="1260" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="95srwG0zsuO4FYz2OOs8-94" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="95srwG0zsuO4FYz2OOs8-97" target="95srwG0zsuO4FYz2OOs8-99" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="95srwG0zsuO4FYz2OOs8-95" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="95srwG0zsuO4FYz2OOs8-94" vertex="1" connectable="0">
-          <mxGeometry x="-0.0381" y="2" relative="1" as="geometry">
-            <mxPoint x="-15" as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="95srwG0zsuO4FYz2OOs8-96" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="95srwG0zsuO4FYz2OOs8-97" target="95srwG0zsuO4FYz2OOs8-110" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="5MLdmsuGrmS4xm5dnepY-2" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="95srwG0zsuO4FYz2OOs8-96">
+          <mxGeometry x="-0.0222" y="2" relative="1" as="geometry">
+            <mxPoint x="-17" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5MLdmsuGrmS4xm5dnepY-1" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="95srwG0zsuO4FYz2OOs8-97" target="95srwG0zsuO4FYz2OOs8-99">
+          <mxGeometry x="-0.0909" y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="95srwG0zsuO4FYz2OOs8-97" value="可兑换学分&lt;br&gt;&amp;nbsp;&amp;gt;= &lt;br&gt;设置比例 * 兑换积分" style="rhombus;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="465" y="1510" width="110" height="100" as="geometry" />
+          <mxGeometry x="670" y="1350" width="110" height="100" as="geometry" />
         </mxCell>
         <mxCell id="95srwG0zsuO4FYz2OOs8-98" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="95srwG0zsuO4FYz2OOs8-99" target="95srwG0zsuO4FYz2OOs8-100" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="95srwG0zsuO4FYz2OOs8-99" value="调用产品接口添加等级积分" style="whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="435" y="1670" width="170" height="60" as="geometry" />
+          <mxGeometry x="865" y="1370" width="170" height="60" as="geometry" />
         </mxCell>
         <mxCell id="95srwG0zsuO4FYz2OOs8-100" value="记录学分积分兑换明细表&lt;br&gt;更新兑换前兑换后学分&lt;br&gt;删除redis中该，表示处理结束" style="whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="430" y="1780" width="180" height="70" as="geometry" />
+          <mxGeometry x="1110" y="1365" width="180" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="95srwG0zsuO4FYz2OOs8-105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="95srwG0zsuO4FYz2OOs8-106" target="95srwG0zsuO4FYz2OOs8-97" edge="1">
+        <mxCell id="5MLdmsuGrmS4xm5dnepY-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="95srwG0zsuO4FYz2OOs8-106" target="95srwG0zsuO4FYz2OOs8-97">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="95srwG0zsuO4FYz2OOs8-106" value="计算当前可兑换学分" style="whiteSpace=wrap;html=1;rounded=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="445" y="1370" width="150" height="60" as="geometry" />
+          <mxGeometry x="380" y="1370" width="150" height="60" as="geometry" />
         </mxCell>
         <mxCell id="95srwG0zsuO4FYz2OOs8-107" value="当前可兑换学分 = 当前学分 - 兑换学分(消耗总学分)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="450" y="1340" width="320" height="30" as="geometry" />
+          <mxGeometry x="360" y="1340" width="320" height="30" as="geometry" />
         </mxCell>
         <mxCell id="95srwG0zsuO4FYz2OOs8-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="95srwG0zsuO4FYz2OOs8-109" target="95srwG0zsuO4FYz2OOs8-106" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -191,7 +193,7 @@
           <mxGeometry x="160" y="1370" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="95srwG0zsuO4FYz2OOs8-110" value="redis记录学员ID，表示处理中" style="whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="270" y="1530" width="120" height="60" as="geometry" />
+          <mxGeometry x="665" y="1520" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
