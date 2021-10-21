@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-21T00:57:39.534Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36" etag="dJ4A0E0RiRtgfMW6RyIv" version="15.5.2" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-21T01:47:46.265Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36" etag="qqs2_FR2EY-YW8miCo63" version="15.5.2" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1186" dy="621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -77,15 +77,6 @@
         </mxCell>
         <mxCell id="zHJnFDCS_xAZhOyIZzer-35" value="前端发起请求" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="60" y="400" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="zHJnFDCS_xAZhOyIZzer-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="zHJnFDCS_xAZhOyIZzer-38" target="zHJnFDCS_xAZhOyIZzer-40">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="zHJnFDCS_xAZhOyIZzer-38" value="前端发起请求" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="60" y="790" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="zHJnFDCS_xAZhOyIZzer-40" value="根据ID返回申请人信息" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="260" y="790" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="zHJnFDCS_xAZhOyIZzer-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="zHJnFDCS_xAZhOyIZzer-42" target="zHJnFDCS_xAZhOyIZzer-43">
           <mxGeometry relative="1" as="geometry" />
