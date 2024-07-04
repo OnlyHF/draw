@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-09-13T13:19:34.277Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36" etag="JujAc--naOli2qvXBZak" version="15.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-04T15:06:02.031Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="8GJUsCyW1459ZtPLhzB_" version="24.6.4" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1426" dy="801" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1194" dy="617" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -155,12 +155,12 @@
         <mxCell id="95srwG0zsuO4FYz2OOs8-96" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="95srwG0zsuO4FYz2OOs8-97" target="95srwG0zsuO4FYz2OOs8-110" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="5MLdmsuGrmS4xm5dnepY-2" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="95srwG0zsuO4FYz2OOs8-96">
+        <mxCell id="5MLdmsuGrmS4xm5dnepY-2" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="95srwG0zsuO4FYz2OOs8-96" vertex="1" connectable="0">
           <mxGeometry x="-0.0222" y="2" relative="1" as="geometry">
             <mxPoint x="-17" y="-14" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="5MLdmsuGrmS4xm5dnepY-1" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="95srwG0zsuO4FYz2OOs8-97" target="95srwG0zsuO4FYz2OOs8-99">
+        <mxCell id="5MLdmsuGrmS4xm5dnepY-1" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="95srwG0zsuO4FYz2OOs8-97" target="95srwG0zsuO4FYz2OOs8-99" edge="1">
           <mxGeometry x="-0.0909" y="10" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -177,7 +177,7 @@
         <mxCell id="95srwG0zsuO4FYz2OOs8-100" value="记录学分积分兑换明细表&lt;br&gt;更新兑换前兑换后学分&lt;br&gt;删除redis中该，表示处理结束" style="whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="1110" y="1365" width="180" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="5MLdmsuGrmS4xm5dnepY-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="95srwG0zsuO4FYz2OOs8-106" target="95srwG0zsuO4FYz2OOs8-97">
+        <mxCell id="5MLdmsuGrmS4xm5dnepY-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="95srwG0zsuO4FYz2OOs8-106" target="95srwG0zsuO4FYz2OOs8-97" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="95srwG0zsuO4FYz2OOs8-106" value="计算当前可兑换学分" style="whiteSpace=wrap;html=1;rounded=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
