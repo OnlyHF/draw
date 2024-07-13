@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-07-13T14:48:18.057Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="Uc5w8ZVatrXwkqxgJeye" version="24.6.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-13T14:59:56.054Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="-6kAs_oeJVG-05qlQXJI" version="24.6.4" type="github">
   <diagram name="第 1 页" id="H3rkJcEj338JZq8r3_St">
-    <mxGraphModel dx="954" dy="617" grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1194" dy="617" grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,7 +8,7 @@
           <mxGeometry x="218" y="304" width="360" height="360" as="geometry" />
         </mxCell>
         <mxCell id="rggu2RhGOUVgy3bwYuPT-2" value="spring cloud gateway 源码" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;" vertex="1" parent="1">
-          <mxGeometry x="235" y="40" width="358" height="38" as="geometry" />
+          <mxGeometry x="235" y="24" width="365" height="54" as="geometry" />
         </mxCell>
         <mxCell id="rggu2RhGOUVgy3bwYuPT-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=12;" edge="1" parent="1" source="rggu2RhGOUVgy3bwYuPT-7" target="rggu2RhGOUVgy3bwYuPT-10">
           <mxGeometry relative="1" as="geometry">
@@ -83,6 +83,31 @@
         </mxCell>
         <mxCell id="rggu2RhGOUVgy3bwYuPT-32" value="返回" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="458" y="727" width="48" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-36" value="GatewayAutoConfiguration&amp;nbsp; 自动配置类" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="44" y="944" width="264" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-37" value="version 4.0.0" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="40" y="880" width="112" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rggu2RhGOUVgy3bwYuPT-38" target="rggu2RhGOUVgy3bwYuPT-40">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="376" y="1040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-38" value="PropertiesRouteDefinitionLocator" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="96" y="1000" width="200" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-40" value="GatewayProperties" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="998" width="164" height="59" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;div style=&quot;color: rgb(169, 183, 198); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 10.5pt; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;color: rgb(204, 120, 50);&quot;&gt;public static final &lt;/span&gt;String &lt;span style=&quot;color: rgb(152, 118, 170); font-style: italic;&quot;&gt;PREFIX &lt;/span&gt;= &lt;span style=&quot;color: rgb(106, 135, 89);&quot;&gt;&quot;spring.cloud.gateway&quot;&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 120, 50);&quot;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" id="rggu2RhGOUVgy3bwYuPT-41">
+          <mxCell style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+            <mxGeometry x="458" y="956" width="528" height="32" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-43" value="路由配置信息 承载类&lt;div&gt;如 yml/properties 配置文件&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="1016" width="176" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
