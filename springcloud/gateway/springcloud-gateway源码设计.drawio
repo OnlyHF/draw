@@ -1,9 +1,89 @@
-<mxfile host="app.diagrams.net" modified="2024-07-13T14:25:39.946Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="Q3prvg26d_2IiQaf5pws" version="24.6.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-13T14:47:39.539Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="kMKeSLcrEftdcV2QvozF" version="24.6.4" type="github">
   <diagram name="第 1 页" id="H3rkJcEj338JZq8r3_St">
-    <mxGraphModel dx="1194" dy="617" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="954" dy="617" grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-10" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="218" y="304" width="360" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-2" value="spring cloud gateway 源码" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="235" y="40" width="358" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=12;" edge="1" parent="1" source="rggu2RhGOUVgy3bwYuPT-7" target="rggu2RhGOUVgy3bwYuPT-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="288" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-7" value="客户端发起请求" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="338" y="136" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="664" as="sourcePoint" />
+            <mxPoint x="350" y="808" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="350" y="720" />
+              <mxPoint x="350" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-34" value="请求" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rggu2RhGOUVgy3bwYuPT-29">
+          <mxGeometry x="-0.25" y="1" relative="1" as="geometry">
+            <mxPoint x="-21" y="17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-12" value="spring cloud gateway&lt;div style=&quot;font-size: 16px;&quot;&gt;转发&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="200" y="256" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-13" value="Gateway Handler Mapping" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="318" y="352" width="160" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-14" value="&lt;div&gt;根据过滤规则&lt;/div&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;获取对应适配器&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="489" y="368" width="104" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-18" value="Gateway Web Handler" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="318" y="440" width="160" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-19" value="处理器" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="492" y="458" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-20" value="Filter ......" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="552" width="160" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-21" value="Filter ......" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="308" y="560" width="160" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-22" value="Filter ......" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="316" y="568" width="160" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-23" value="Filter ......" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="324" y="576" width="160" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-24" value="Filter ......" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="332" y="584" width="160" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-25" value="Filter ......" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="592" width="160" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-26" value="Filter ......" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="348" y="600" width="160" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-27" value="过滤器&lt;div&gt;责任链&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="492" y="532" width="56" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-28" value="最终服务端&lt;div&gt;处理逻辑&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="316" y="807" width="160" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.869;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="rggu2RhGOUVgy3bwYuPT-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="434" y="807" as="sourcePoint" />
+            <mxPoint x="455" y="665" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-32" value="返回" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="458" y="727" width="48" height="32" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
