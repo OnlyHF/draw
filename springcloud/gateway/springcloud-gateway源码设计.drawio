@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-07-13T14:59:56.054Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="-6kAs_oeJVG-05qlQXJI" version="24.6.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-14T09:20:35.103Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="xm0owmtycV_kZE4M0ia6" version="24.6.4" type="github">
   <diagram name="第 1 页" id="H3rkJcEj338JZq8r3_St">
-    <mxGraphModel dx="1194" dy="617" grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1406" dy="651" grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -108,6 +108,215 @@
         </UserObject>
         <mxCell id="rggu2RhGOUVgy3bwYuPT-43" value="路由配置信息 承载类&lt;div&gt;如 yml/properties 配置文件&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="600" y="1016" width="176" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="rggu2RhGOUVgy3bwYuPT-44" target="rggu2RhGOUVgy3bwYuPT-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-44" value="DispatcherHandler&lt;div&gt;.handle(ServerWebExchange)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="92" y="1320" width="232" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-45" value="org.springframework.web.reactive.DispatcherHandler" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1440" width="296" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="rggu2RhGOUVgy3bwYuPT-47" target="rggu2RhGOUVgy3bwYuPT-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-47" value="请求被封装为特定对象：&lt;span style=&quot;color: rgb(169, 183, 198); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 10.5pt; white-space: pre; background-color: rgb(255, 255, 255);&quot;&gt;ServerWebExchange&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1144" width="216" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-49" value="&lt;div style=&quot;color: rgb(169, 183, 198); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 10.5pt; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;handlePreFlight&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="482" y="1480" width="204" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rggu2RhGOUVgy3bwYuPT-50" target="rggu2RhGOUVgy3bwYuPT-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-55" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rggu2RhGOUVgy3bwYuPT-54">
+          <mxGeometry x="-0.1522" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rggu2RhGOUVgy3bwYuPT-50" target="rggu2RhGOUVgy3bwYuPT-57">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="776" y="1364" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-58" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rggu2RhGOUVgy3bwYuPT-56">
+          <mxGeometry x="-0.0729" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-50" value="&lt;div style=&quot;color: rgb(169, 183, 198); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 10.5pt; white-space: pre;&quot;&gt;&lt;span style=&quot;font-style: italic; background-color: rgb(255, 255, 255);&quot;&gt;isPreFlightRequest&lt;/span&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="544" y="1324" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-53" value="&lt;div style=&quot;color: rgb(169, 183, 198); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 10.5pt; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;   request.getMethod() == HttpMethod.&lt;span style=&quot;color: rgb(152, 118, 170); font-style: italic;&quot;&gt;OPTIONS &lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(169, 183, 198); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 10.5pt; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&amp;amp;&amp;amp; headers.containsKey(&lt;span style=&quot;color: rgb(106, 135, 89);&quot;&gt;&quot;Origin&quot;&lt;/span&gt;) &lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(169, 183, 198); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 10.5pt; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&amp;amp;&amp;amp; headers.containsKey(&lt;span style=&quot;color: rgb(106, 135, 89);&quot;&gt;&quot;Access-Control-Request-Method&quot;&lt;/span&gt;)&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="368" y="1232" width="474" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="rggu2RhGOUVgy3bwYuPT-57" target="rggu2RhGOUVgy3bwYuPT-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-62" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;HandlerMapping 负责路径到handler的映射&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rggu2RhGOUVgy3bwYuPT-61">
+          <mxGeometry x="-0.3784" y="-3" relative="1" as="geometry">
+            <mxPoint x="3" y="22" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-57" value="&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#a9b7c6&quot;&gt;&lt;span style=&quot;font-size: 14px; white-space: pre;&quot;&gt;mapping.getHandler(exchange)&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="994" y="1324" width="328" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-59" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;HandlerMapping&lt;/font&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;span style=&quot;color: rgb(169, 183, 198); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; white-space: pre;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;获取一个适合当前请求的handler&lt;/font&gt;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1048" y="1269" width="256" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;" edge="1" parent="1" source="rggu2RhGOUVgy3bwYuPT-60" target="rggu2RhGOUVgy3bwYuPT-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-66" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;gateway 实现的是&amp;nbsp;RoutePredicateHandlerMapping&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rggu2RhGOUVgy3bwYuPT-64">
+          <mxGeometry y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-60" value="&lt;div style=&quot;&quot;&gt;AbstractHandlerMapping.getHandler&lt;/div&gt;&lt;div style=&quot;&quot;&gt;(ServerWebExchange exchange)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="994" y="1552" width="328" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="rggu2RhGOUVgy3bwYuPT-63" target="rggu2RhGOUVgy3bwYuPT-67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-70" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;继承&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rggu2RhGOUVgy3bwYuPT-69">
+          <mxGeometry x="-0.0682" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-79" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="rggu2RhGOUVgy3bwYuPT-63" target="rggu2RhGOUVgy3bwYuPT-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-80" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;1、获取路由信息&lt;/font&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;2、通过断言判断路由是否可用&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rggu2RhGOUVgy3bwYuPT-79">
+          <mxGeometry x="0.0182" y="1" relative="1" as="geometry">
+            <mxPoint x="-62" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-63" value="&lt;div style=&quot;&quot;&gt;RoutePredicateHandlerMapping.getHandlerInternal&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;获取handler&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="994" y="1754" width="328" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1" source="rggu2RhGOUVgy3bwYuPT-67" target="rggu2RhGOUVgy3bwYuPT-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-77" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;实现&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rggu2RhGOUVgy3bwYuPT-76">
+          <mxGeometry x="0.0556" y="-4" relative="1" as="geometry">
+            <mxPoint x="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-67" value="&lt;div style=&quot;&quot;&gt;AbstractHandlerMapping&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="776" y="1696" width="184" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-68" value="&lt;div style=&quot;&quot;&gt;AbstractHandlerMapping&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="776" y="1608" width="184" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-83" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="rggu2RhGOUVgy3bwYuPT-78" target="rggu2RhGOUVgy3bwYuPT-82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-84" value="1、获取配置的路由信息" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" vertex="1" connectable="0" parent="rggu2RhGOUVgy3bwYuPT-83">
+          <mxGeometry x="-0.0243" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-101" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rggu2RhGOUVgy3bwYuPT-78" target="rggu2RhGOUVgy3bwYuPT-100">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-102" value="&lt;span style=&quot;font-size: 13px; text-align: left;&quot;&gt;2、通过断言判断路由是否可用&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rggu2RhGOUVgy3bwYuPT-101">
+          <mxGeometry x="-0.1139" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-78" value="&lt;div style=&quot;&quot;&gt;RoutePredicateHandlerMapping&lt;/div&gt;&lt;div style=&quot;&quot;&gt;.lookupRoute&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="632" y="1952" width="328" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-95" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="rggu2RhGOUVgy3bwYuPT-97" target="rggu2RhGOUVgy3bwYuPT-94">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="2424" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-96" value="2、转换为Route" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rggu2RhGOUVgy3bwYuPT-95">
+          <mxGeometry x="-0.2098" y="2" relative="1" as="geometry">
+            <mxPoint x="11" y="17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=1 4;" edge="1" parent="1" source="rggu2RhGOUVgy3bwYuPT-82" target="rggu2RhGOUVgy3bwYuPT-97">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-99" value="gateway 启动时缓存数据" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rggu2RhGOUVgy3bwYuPT-98">
+          <mxGeometry x="-0.0192" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-82" value="&lt;div style=&quot;&quot;&gt;this.routeLocator.getRoutes()&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;CachingRouteLocator.getRoutes() 缓存中获取&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;RouteDefinitionRouteLocator.getRoutes&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="388" y="2176" width="328" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-89" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="rggu2RhGOUVgy3bwYuPT-97" target="rggu2RhGOUVgy3bwYuPT-88">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="2424" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-90" value="1、读取配置" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rggu2RhGOUVgy3bwYuPT-89">
+          <mxGeometry x="0.009" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-88" value="&lt;div style=&quot;&quot;&gt;PropertiesRouteDefinitionLocator&lt;/div&gt;&lt;div style=&quot;&quot;&gt;.getRouteDefinitions&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="2600" width="328" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-92" value="&lt;div&gt;配置中的routes规则&lt;/div&gt;GatewayProperties.routes" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="138" y="2536" width="168" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-93" value="&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;1、读取配置&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;2、转换为Route&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="244" y="2408" width="112" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-94" value="&lt;div style=&quot;&quot;&gt;RouteDefinitionRouteLocator&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;.convertToRoute&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="484" y="2600" width="328" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-97" value="&lt;div style=&quot;&quot;&gt;启动时，路由信息缓存起来&lt;/div&gt;&lt;div style=&quot;&quot;&gt;RouteDefinitionRouteLocator.getRoutes&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="388" y="2360" width="328" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="rggu2RhGOUVgy3bwYuPT-100" target="rggu2RhGOUVgy3bwYuPT-103">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-100" value="&lt;div style=&quot;&quot;&gt;filterWhen&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;请求上下文绑定路由id&lt;/div&gt;&lt;div style=&quot;&quot;&gt;put(GATEWAY_PREDICATE_ROUTE_ATTR, r.getId());&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="920" y="2176" width="328" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="rggu2RhGOUVgy3bwYuPT-103" target="rggu2RhGOUVgy3bwYuPT-106">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-108" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; background-color: rgb(251, 251, 251);&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bdiv%20style%3D%26quot%3B%26quot%3B%26gt%3B%E8%B0%83%E7%94%A8%E6%96%AD%E8%A8%80%E5%B7%A5%E5%8E%82apply%E6%96%B9%E6%B3%95%26lt%3B%2Fdiv%26gt%3B%26lt%3Bdiv%20style%3D%26quot%3B%26quot%3B%26gt%3Br.getPredicate().apply(exchange)%3B%26lt%3Bbr%26gt%3B%26lt%3B%2Fdiv%26gt%3B%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dcenter%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22920%22%20y%3D%222352%22%20width%3D%22328%22%20height%3D%2280%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rggu2RhGOUVgy3bwYuPT-107">
+          <mxGeometry x="0.0208" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-109" value="断言 Predicate.test()" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rggu2RhGOUVgy3bwYuPT-107">
+          <mxGeometry x="-0.0208" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-103" value="&lt;div style=&quot;&quot;&gt;调用断言工厂apply方法&lt;/div&gt;&lt;div style=&quot;&quot;&gt;r.getPredicate().apply(exchange);&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="920" y="2352" width="328" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-114" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=1 4;" edge="1" parent="1" source="rggu2RhGOUVgy3bwYuPT-106" target="rggu2RhGOUVgy3bwYuPT-113">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-115" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;例如&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rggu2RhGOUVgy3bwYuPT-114">
+          <mxGeometry x="0.1458" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-106" value="&lt;div style=&quot;&quot;&gt;内部调用GatewayPredicate.test()方法&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="920" y="2544" width="328" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-116" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rggu2RhGOUVgy3bwYuPT-113" target="rggu2RhGOUVgy3bwYuPT-117">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1084" y="2864" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-113" value="PathRoutePredicateFactory" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="2720" width="328" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="rggu2RhGOUVgy3bwYuPT-117" value="apply 方法 返回的为： Predicate 对象&lt;div&gt;具体实现为： GatewayPredicate 对象&lt;/div&gt;&lt;div&gt;实现了具体断言test方法&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="2872" width="328" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
