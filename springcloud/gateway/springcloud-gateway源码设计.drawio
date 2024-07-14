@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-07-14T13:34:21.994Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="yLu0-p9wrhIjXtXjXERL" version="24.6.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-14T13:46:13.311Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="2LD2R5refkKcEBy2FqV8" version="24.6.5" type="github">
   <diagram name="第 1 页" id="H3rkJcEj338JZq8r3_St">
-    <mxGraphModel dx="1406" dy="651" grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1886" dy="854" grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -162,9 +162,9 @@
         <mxCell id="tno-QMCIabjcAEofRb9Y-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rggu2RhGOUVgy3bwYuPT-57" target="tno-QMCIabjcAEofRb9Y-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="tno-QMCIabjcAEofRb9Y-3" value="&lt;span style=&quot;font-size: 12px; text-wrap: wrap; background-color: rgb(251, 251, 251);&quot;&gt;FilteringWebHandler&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="tno-QMCIabjcAEofRb9Y-2">
+        <mxCell id="tno-QMCIabjcAEofRb9Y-3" value="&lt;span style=&quot;font-size: 12px; text-wrap: wrap; background-color: rgb(251, 251, 251);&quot;&gt;FilteringWebHandler&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px; text-wrap: wrap; background-color: rgb(251, 251, 251);&quot;&gt;若匹配到多个Handler，则默认使用第一个&lt;/span&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=0;" vertex="1" connectable="0" parent="tno-QMCIabjcAEofRb9Y-2">
           <mxGeometry x="-0.0863" y="-1" relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="-11" y="-1" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="rggu2RhGOUVgy3bwYuPT-57" value="&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#a9b7c6&quot;&gt;&lt;span style=&quot;font-size: 14px; white-space: pre;&quot;&gt;mapping.getHandler(exchange)&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
@@ -344,7 +344,7 @@
         </UserObject>
         <UserObject label="org.springframework.cloud.gateway.handler.FilteringWebHandler" link="org.springframework.cloud.gateway.handler.FilteringWebHandler" id="tno-QMCIabjcAEofRb9Y-4">
           <mxCell style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-            <mxGeometry x="1400" y="1312" width="376" height="24" as="geometry" />
+            <mxGeometry x="1384" y="1296" width="376" height="16" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="tno-QMCIabjcAEofRb9Y-6" value="HandlerAdapter 负责适配 HandlerMapping返回的handler，&lt;div&gt;调用handle方法生成HandlerResult&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
@@ -373,7 +373,7 @@
         </UserObject>
         <UserObject label="返回 mono.then(Mono.empty())&lt;div&gt;返回Mono.empty() 表示不会触发handleResult&lt;/div&gt;" link="SimpleHandlerAdapter.handle" id="tno-QMCIabjcAEofRb9Y-10">
           <mxCell style="rounded=0;whiteSpace=wrap;html=1;align=center;fillColor=#b1ddf0;strokeColor=#10739e;" vertex="1" parent="1">
-            <mxGeometry x="2192" y="1704" width="328" height="80" as="geometry" />
+            <mxGeometry x="2064" y="1720" width="328" height="80" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="&lt;div&gt;DispatcherHandler&lt;/div&gt;.handleResult()" link="SimpleHandlerAdapter.handle" id="tno-QMCIabjcAEofRb9Y-13">
@@ -460,6 +460,12 @@
         </UserObject>
         <mxCell id="tno-QMCIabjcAEofRb9Y-43" value="处理响应结果，实则没执行该部分代码" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="2836" y="1400" width="224" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="tno-QMCIabjcAEofRb9Y-44" value="主要处理逻辑在：DispatcherHandler.handle(&lt;span style=&quot;text-wrap: wrap;&quot;&gt;ServerWebExchange&lt;/span&gt;) 方法" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="522" y="260" width="400" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="tno-QMCIabjcAEofRb9Y-45" value="&lt;span style=&quot;text-wrap: wrap;&quot;&gt;FilteringWebHandler&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="608" y="452" width="128" height="32" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
