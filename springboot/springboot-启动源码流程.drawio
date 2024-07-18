@@ -1,9 +1,52 @@
-<mxfile host="app.diagrams.net" modified="2024-07-17T23:21:15.250Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" version="24.7.1" etag="ceygJLtt1rlDVI_3Tpbj" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-18T00:09:45.637Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="36dYZsPeJI9YqGFx5qmk" version="24.7.1" type="github">
   <diagram name="第 1 页" id="V4Ak-N3mkKXYkzaVka8B">
-    <mxGraphModel>
+    <mxGraphModel dx="1166" dy="651" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="5lzMWwLud2EmKNjs77PM-1" value="版本：&amp;nbsp; springboot 3.0.2" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#FF1434;" vertex="1" parent="1">
+          <mxGeometry x="20" y="30" width="260" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="5lzMWwLud2EmKNjs77PM-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="5lzMWwLud2EmKNjs77PM-2" target="5lzMWwLud2EmKNjs77PM-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5lzMWwLud2EmKNjs77PM-7" value="内部分两步：&lt;div&gt;1、new SpringApplication()&lt;/div&gt;&lt;div&gt;2、run() 方法调用&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5lzMWwLud2EmKNjs77PM-5">
+          <mxGeometry x="-0.2" y="-2" relative="1" as="geometry">
+            <mxPoint x="16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5lzMWwLud2EmKNjs77PM-2" value="&lt;div&gt;springboot启动入口&lt;/div&gt;SpringApplication.run(MainApplication.class, args);" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="160" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5lzMWwLud2EmKNjs77PM-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5lzMWwLud2EmKNjs77PM-4" target="5lzMWwLud2EmKNjs77PM-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="880" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5lzMWwLud2EmKNjs77PM-4" value="1、new SpringApplication&lt;div&gt;&lt;/div&gt;&lt;div&gt;初始化数据&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="160" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5lzMWwLud2EmKNjs77PM-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5lzMWwLud2EmKNjs77PM-9" target="5lzMWwLud2EmKNjs77PM-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5lzMWwLud2EmKNjs77PM-9" value="1.1、ResourceLoader&lt;div&gt;资源加载器&amp;nbsp; 传值默认null&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="320" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5lzMWwLud2EmKNjs77PM-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5lzMWwLud2EmKNjs77PM-10" target="5lzMWwLud2EmKNjs77PM-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5lzMWwLud2EmKNjs77PM-10" value="1.2、Set&amp;lt;Class&amp;lt;?&amp;gt;&amp;gt;&amp;nbsp; primarySources&lt;div&gt;记录启动配置Class，后续使用&lt;/div&gt;&lt;div&gt;有注解的配置类：@SpringBootApplication&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="480" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5lzMWwLud2EmKNjs77PM-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;shape=flexArrow;dashed=1;" edge="1" parent="1" source="5lzMWwLud2EmKNjs77PM-12" target="5lzMWwLud2EmKNjs77PM-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5lzMWwLud2EmKNjs77PM-12" value="&lt;div&gt;1.3、webApplicationType&lt;/div&gt;&lt;div&gt;容器的枚举类型处理&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="640" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5lzMWwLud2EmKNjs77PM-15" value="this.webApplicationType = WebApplicationType.deduceFromClasspath();" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="640" width="300" height="80" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
