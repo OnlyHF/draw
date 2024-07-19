@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-07-19T14:36:11.106Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="VZlBS0LrWGGATIX3H9RX" version="24.7.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-19T23:49:00.565Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="XUVlfa-fyd1nAGtPele7" version="24.7.1" type="github">
   <diagram name="第 1 页" id="V4Ak-N3mkKXYkzaVka8B">
-    <mxGraphModel dx="3540" dy="854" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3060" dy="674" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -86,7 +86,7 @@
         <mxCell id="WUfuaM3kLcoVB8gfCpkm-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" parent="1" source="WUfuaM3kLcoVB8gfCpkm-14" target="WUfuaM3kLcoVB8gfCpkm-22" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WUfuaM3kLcoVB8gfCpkm-14" value="1.4、获取 BootstrapRegistryInitializer 的配置实现类&lt;div&gt;&lt;font color=&quot;#ff1434&quot;&gt;有何作用？&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="WUfuaM3kLcoVB8gfCpkm-14" value="1.4、获取 BootstrapRegistryInitializer 的配置实现类" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="730" y="850" width="300" height="80" as="geometry" />
         </mxCell>
         <mxCell id="WUfuaM3kLcoVB8gfCpkm-17" value="&lt;font color=&quot;#ff1434&quot;&gt;BootstrapRegistryInitializer&lt;/font&gt; 在启动和环境后处理期间都可用，直到ApplicationContext 准备好为止&lt;div&gt;&lt;div&gt;容器启动时，手动注入bean，需要先配置在 META-INF/spring.factories 文件中&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
@@ -148,11 +148,76 @@
         <mxCell id="kxU_cCiuupvdr7plJoXA-2" value="容器启动完成之后，将会发送事件AvailabilityChangeEvent&lt;div&gt;当前应用程序状态&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="2550" y="160" width="300" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="kxU_cCiuupvdr7plJoXA-5" value="2.1、createBootstrapContext()&lt;div&gt;执行BootstrapRegistryInitializer.initialize() 方法&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1600" y="330" width="300" height="80" as="geometry" />
+        <mxCell id="kxU_cCiuupvdr7plJoXA-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="kxU_cCiuupvdr7plJoXA-5" target="kxU_cCiuupvdr7plJoXA-11">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="kxU_cCiuupvdr7plJoXA-10" value="&lt;div&gt;&lt;span style=&quot;color: rgb(255, 20, 52); text-align: center; text-wrap: wrap;&quot;&gt;什么时候执行？&lt;/span&gt;&lt;br&gt;&lt;/div&gt;在后续SpringApplication.run() 方法的createBootstrapContext() 方法中执行&lt;div&gt;initialize() 方法&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="960" y="785" width="420" height="60" as="geometry" />
+        <mxCell id="kxU_cCiuupvdr7plJoXA-5" value="2.1、createBootstrapContext()&lt;div&gt;创建BootstrapContext&amp;nbsp;&lt;br&gt;&lt;div&gt;并执行BootstrapRegistryInitializer.initialize() 方法&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="310" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-10" value="&lt;div&gt;&lt;span style=&quot;color: rgb(255, 20, 52); text-align: center; text-wrap: wrap;&quot;&gt;什么时候执行？&lt;/span&gt;&lt;br&gt;&lt;/div&gt;在后续SpringApplication.run() 方法的createBootstrapContext() 方法中执行&lt;div&gt;initialize() 方法&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(255, 20, 52); text-align: center; text-wrap: wrap;&quot;&gt;有何作用？&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1、在SpringApplicaionRunListener 事件监听器中可以使用&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="800" width="420" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="kxU_cCiuupvdr7plJoXA-11" target="kxU_cCiuupvdr7plJoXA-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-11" value="2.2、定义&amp;nbsp;ConfigurableApplicationContext context&lt;div&gt;在后续赋值处理，并最终返回&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="460" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-12" value="该方法会有返回值： ConfigurableApplicationContext&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1510" y="130" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="kxU_cCiuupvdr7plJoXA-16" target="kxU_cCiuupvdr7plJoXA-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-16" value="2.3、执行：configureHeadlessProperty()&amp;nbsp;&lt;div&gt;设置属性值：&amp;nbsp;java.awt.headless （默认为true）&lt;/div&gt;&lt;div&gt;也可在系统参数中配置&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="620" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-18" value="java.awt.headless = true 表示在无显示设备下运行&lt;div&gt;即：无显示器、鼠标、键盘等&lt;/div&gt;&lt;div&gt;可参考：https://blog.csdn.net/xyz/article/details/117967677&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="585" width="340" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="kxU_cCiuupvdr7plJoXA-19" target="kxU_cCiuupvdr7plJoXA-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-19" value="2.4、SpringApplicationRunListeners listeners&amp;nbsp;&lt;div&gt;= getRunListeners(args);&lt;/div&gt;&lt;div&gt;获取事件监听器集合，可用于在启动过程中加载配置&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="775" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-21" value="1、配置在META-INF/spring.factories文件中&lt;div&gt;SpringApplicationRunListener 的子实现类&lt;br&gt;&lt;/div&gt;&lt;div&gt;用于监听springboot启动过程中发布的事件&lt;/div&gt;&lt;div&gt;2、可使用在BootstrapRegistryInitializer 注入的对象&lt;/div&gt;&lt;div&gt;3、可监听事件：ApplicationStartingEvent 表示启动事件&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1920" y="735" width="320" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="kxU_cCiuupvdr7plJoXA-22" target="kxU_cCiuupvdr7plJoXA-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-22" value="2.5、listeners.starting(bootstrapContext, this.mainApplicationClass);" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="930" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-25" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;容器启动执行，自定义实现类，在此时可以被执行&lt;/span&gt;&lt;/div&gt;&lt;div&gt;springboot默认实现类EventPublishingRunListener，&lt;/div&gt;&lt;div&gt;在方法内发送事件，可用于监听容器步骤&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1918" y="930" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="kxU_cCiuupvdr7plJoXA-26" target="kxU_cCiuupvdr7plJoXA-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-26" value="2.6、new DefaultApplicationArguments(args);&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; text-wrap: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%222.5%E3%80%81listeners.starting(bootstrapContext%2C%20this.mainApplicationClass)%3B%22%20style%3D%22whiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%221600%22%20y%3D%22930%22%20width%3D%22300%22%20height%3D%2280%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;div&gt;将启动参数封装为对象，在后续使用&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="1089" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1" source="kxU_cCiuupvdr7plJoXA-28" target="kxU_cCiuupvdr7plJoXA-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-35" value="方法内部实现" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="kxU_cCiuupvdr7plJoXA-32">
+          <mxGeometry x="-0.2945" relative="1" as="geometry">
+            <mxPoint x="18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-28" value="2.7、prepareEnvironment(listeners, bootstrapContext, applicationArguments)&lt;div&gt;准备环境&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1525" y="1260" width="450" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-30" value="方法中的三个参数：&lt;div&gt;1、listeners 程序执行某一步，则执行相应的方法&lt;/div&gt;&lt;div&gt;2、程序上下文，在步骤2.2中获取到&lt;/div&gt;&lt;div&gt;3、应用启动传参对象&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1928" y="1185" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-31" value="2.7.1、ConfigurableEnvironment environment = getOrCreateEnvironment();&lt;div&gt;获取或创建环境对象&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2250" y="1265" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-34" value="ApplicationContextFactory&lt;div&gt;创建环境对象，主要有三个实现类&lt;/div&gt;&lt;div&gt;1、DefaultApplicationContextFactory 默认实现，在该类中循环使用以下两个实现&lt;/div&gt;&lt;div&gt;2、&lt;span style=&quot;background-color: initial;&quot;&gt;ServletWebServerApplicationContextFactory&amp;nbsp; &amp;nbsp;servlet创建环境&lt;/span&gt;&lt;/div&gt;&lt;div&gt;3、&lt;span style=&quot;background-color: initial;&quot;&gt;ReactiveWebServerApplicationContextFactory&amp;nbsp; &amp;nbsp;tomcat创建环境&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2250" y="1150" width="450" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
