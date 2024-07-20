@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-07-20T07:04:38.636Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="0VNsjFri1rCpJpjeJw-X" version="24.7.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-20T13:29:59.471Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="SZezvEK-fq2OZPKJdVTh" version="24.7.1" type="github">
   <diagram name="第 1 页" id="V4Ak-N3mkKXYkzaVka8B">
-    <mxGraphModel dx="3060" dy="640" grid="1" gridSize="4" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3300" dy="820" grid="1" gridSize="4" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -143,10 +143,10 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="kxU_cCiuupvdr7plJoXA-1" value="容器启动完成之后，将会发送事件ApplicationReadyEvent&lt;div&gt;可以监听此事件，知晓应用启动耗时&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2130" y="160" width="300" height="80" as="geometry" />
+          <mxGeometry x="2060" y="2744" width="300" height="80" as="geometry" />
         </mxCell>
         <mxCell id="kxU_cCiuupvdr7plJoXA-2" value="容器启动完成之后，将会发送事件AvailabilityChangeEvent&lt;div&gt;当前应用程序状态&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2550" y="160" width="300" height="80" as="geometry" />
+          <mxGeometry x="2480" y="2744" width="300" height="80" as="geometry" />
         </mxCell>
         <mxCell id="kxU_cCiuupvdr7plJoXA-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="kxU_cCiuupvdr7plJoXA-5" target="kxU_cCiuupvdr7plJoXA-11">
           <mxGeometry relative="1" as="geometry" />
@@ -464,11 +464,66 @@
         <mxCell id="kxU_cCiuupvdr7plJoXA-125" value="2.10.11、listeners.contextLoaded(context);&lt;div&gt;context上下文 bean定义加载完成，调用监听器处理&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="6524" y="1830" width="340" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-132" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="kxU_cCiuupvdr7plJoXA-129" target="kxU_cCiuupvdr7plJoXA-131">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="kxU_cCiuupvdr7plJoXA-129" value="&lt;div style=&quot;text-align: start;&quot;&gt;2.11、refreshContext(context);&lt;/div&gt;&lt;div style=&quot;&quot;&gt;spring容器&lt;span style=&quot;background-color: initial;&quot;&gt;刷新&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1600" y="2024" width="300" height="80" as="geometry" />
         </mxCell>
         <mxCell id="kxU_cCiuupvdr7plJoXA-130" value="属于Spring模块，&lt;font color=&quot;#ff0000&quot;&gt;后续在Spring流程图补充&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="1904" y="2028" width="248" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-134" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="kxU_cCiuupvdr7plJoXA-131" target="kxU_cCiuupvdr7plJoXA-133">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-131" value="&lt;div style=&quot;&quot;&gt;2.12、afterRefresh() 容器刷新后置处理&lt;/div&gt;&lt;div style=&quot;&quot;&gt;默认未实现，可扩展&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="2176" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-139" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="kxU_cCiuupvdr7plJoXA-133" target="kxU_cCiuupvdr7plJoXA-138">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-133" value="&lt;div style=&quot;&quot;&gt;2.13、listeners.started()&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;通知监听器，容器已启动完成&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="2338" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-136" value="1、配置ApplicationListener的实现类执行started()方法&#xa;2、发布事件：ApplicationStartedEvent&#xa;3、发布事件：AvailabilityChangeEvent" style="text;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1920" y="2316" width="308" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-141" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;dashed=1;dashPattern=1 2;" edge="1" parent="1" source="kxU_cCiuupvdr7plJoXA-138" target="kxU_cCiuupvdr7plJoXA-140">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-142" value="内部方法执行" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="kxU_cCiuupvdr7plJoXA-141">
+          <mxGeometry x="-0.0645" y="6" relative="1" as="geometry">
+            <mxPoint y="6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-146" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="kxU_cCiuupvdr7plJoXA-138" target="kxU_cCiuupvdr7plJoXA-145">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-138" value="&lt;div style=&quot;&quot;&gt;2.14、callRunners() 方法执行&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="2516" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-144" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="kxU_cCiuupvdr7plJoXA-140" target="kxU_cCiuupvdr7plJoXA-143">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-140" value="&lt;div style=&quot;&quot;&gt;1、ApplicationRunner 实现类执行&lt;/div&gt;&lt;div style=&quot;&quot;&gt;参数对象：ApplicationArguments&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="2060" y="2516" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-143" value="&lt;div style=&quot;&quot;&gt;2、CommandLineRunner实现类执行&lt;/div&gt;&lt;div style=&quot;&quot;&gt;参数对象： String... args&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="2476" y="2516" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-147" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;dashed=1;dashPattern=1 2;" edge="1" parent="1" source="kxU_cCiuupvdr7plJoXA-145" target="kxU_cCiuupvdr7plJoXA-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-148" value="内部方法实现" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="kxU_cCiuupvdr7plJoXA-147">
+          <mxGeometry x="-0.2125" y="-2" relative="1" as="geometry">
+            <mxPoint x="12" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-145" value="&lt;div style=&quot;&quot;&gt;2.15、应用启动完成且应用在运行中&lt;/div&gt;&lt;div style=&quot;&quot;&gt;执行 listeners.ready()&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;通知监听器应用已启动完成&lt;/div&gt;&lt;div style=&quot;&quot;&gt;带有启动完成耗时事件&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="2744" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kxU_cCiuupvdr7plJoXA-149" value="1、配置ApplicationListener的实现类执行started()方法&#xa;2、发布事件：ApplicationReadyEvent&#xa;3、发布事件：AvailabilityChangeEvent" style="text;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1874" y="2684" width="308" height="56" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
