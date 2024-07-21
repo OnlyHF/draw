@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-07-20T13:31:02.871Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="tWp38ilhaa0irY57VToy" version="24.7.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-21T23:32:37.691Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="6XScE4DeowFOxOkRoYXs" version="24.7.1" type="github">
   <diagram name="第 1 页" id="V4Ak-N3mkKXYkzaVka8B">
-    <mxGraphModel dx="3300" dy="820" grid="1" gridSize="4" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3060" dy="640" grid="1" gridSize="4" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -455,7 +455,7 @@
         <mxCell id="kxU_cCiuupvdr7plJoXA-119" value="创建该对象时，默认会创建：&lt;div&gt;1、AnnotatedBeanDefinitionReader&amp;nbsp; &amp;nbsp;注解Bean定义读取器&lt;/div&gt;&lt;div&gt;2、XmlBeanDefinitionReader&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;xml Bean定义读取器&lt;/div&gt;&lt;div&gt;3、groovyReader&amp;nbsp; groovy读取器&lt;/div&gt;&lt;div&gt;4、ClassPathBeanDefinitionScanner&amp;nbsp; 路径Bean定义扫描器&lt;/div&gt;&lt;div&gt;5、scanner.addExcludeFilter()&amp;nbsp; &amp;nbsp; 排除过滤器&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="6432" y="1500" width="340" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="kxU_cCiuupvdr7plJoXA-120" value="3、加载配置 load()&lt;div&gt;读取 Bean定义到Spring容器&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="kxU_cCiuupvdr7plJoXA-120" value="3、加载配置 load()&lt;div&gt;注册配置类 到Spring容器&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="6050" y="1330" width="340" height="80" as="geometry" />
         </mxCell>
         <mxCell id="kxU_cCiuupvdr7plJoXA-124" value="spring 加载读取bean定义到容器，&lt;div&gt;&lt;font color=&quot;#ff0000&quot;&gt;后续在spring流程图中补充&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
